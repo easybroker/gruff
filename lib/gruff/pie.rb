@@ -265,7 +265,7 @@ class Gruff::Pie < Gruff::Base
     end
 
     def label
-      options[:show_values_as_labels] ? value.to_s : "#{percentage}%"
+      [name, value].join(': ')
     end
   end
 end
